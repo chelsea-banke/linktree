@@ -1,0 +1,21 @@
+header{
+    top: 0px;
+    margin: auto;
+    width: fit-content;
+    text-align: center;
+}
+header div{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    overflow: hidden;
+    background-color: black;
+    border: none;
+    margin: auto;
+}
+img{
+    width: 100%;
+}
+h1{
+    font-size: large;
+}
