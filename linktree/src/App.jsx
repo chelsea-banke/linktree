@@ -39,7 +39,11 @@ function App() {
         <h1>Chelsea Banke</h1>
       </header>
       <main>
-        <Link />
+        {links.map(link => {
+          return (
+            <Link id={link.id} title={link.title} url={link.url} />
+          )
+        })}
       </main>
     </div>
   )

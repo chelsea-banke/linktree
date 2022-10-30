@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import './Link.css'
 
-function Link() {
+function Link(props) {
 
   return (
-    <a href='' className='link'><button className='link-btn'>twitter</button></a>
+    <a href={props.url} className='link' id={props.id}><button className='link-btn'>{props.title}</button></a>
   )
 }
 
