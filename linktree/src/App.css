@@ -19,3 +19,7 @@ img{
 h1{
     font-size: large;
 }
+main{
+    margin-top: 40px;
+    width: 100vw;
+}

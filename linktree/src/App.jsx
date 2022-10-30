@@ -7,10 +7,15 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <header>
-      <div><img src="images/profile.png" /></div>
-      <h1>Chelsea Banke</h1>
-    </header>
+    <div className='App'>
+      <header>
+        <div><img src="images/profile.png" /></div>
+        <h1>Chelsea Banke</h1>
+      </header>
+      <main>
+        <Link />
+      </main>
+    </div>
   )
 }
 

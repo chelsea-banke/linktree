@@ -4,7 +4,7 @@ import './Link.css'
 function Link() {
 
   return (
-    <h1>Hello world</h1>
+    <a href='' className='link'><button className='link-btn'>twitter</button></a>
   )
 }
 
