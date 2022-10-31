@@ -7,7 +7,7 @@ function App() {
   return (
     <div className='App'>
       <section id='profile'>
-        <div id='profile__img'><img src="images/profile.png" /></div>
+        <div><img id='profile__img' src="images/profile.png" /></div>
         <h1>Chelsea Banke</h1>
         <div id='usr-names'>
           <h2 id='twitter'>Chelsea Banke</h2>
@@ -19,6 +19,12 @@ function App() {
         <a href='https://books.zuri.team' className='link' id='books'>Zuri Books</a><br/>
         <a href='https://books.zuri.team/python-for-beginners?ref_id=<Banke>' className='link' id='book__python'>Python Books</a><br/>
         <a href='https://background.zuri.team' className='link' id='pitch'>Background check for coders</a>
+      </section>
+      <section>
+        <div id='media'>
+        <a href=''><img src='images/slack.png' /></a>
+        <a href=''><img src='images/github.svg' /></a>
+        </div>
       </section>
     </div>
   )
