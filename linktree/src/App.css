@@ -54,5 +54,22 @@ h1{
     /* margin: px; */
     margin-left: 15px;
 }
-@media screen and (max-width: 525px) {
+#foot{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    width: 100vw;
+    flex-wrap: wrap;
+}
+#foot img{
+    width: 150px;
+}
+@media screen and (max-width: 700px) {
+    #foot{
+        display: block;
+    }
+    #foot img{
+        width: 100px;
+    }
 }

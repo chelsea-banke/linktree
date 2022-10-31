@@ -25,6 +25,11 @@ function App() {
         <a href=''><img src='images/slack.png' /></a>
         <a href=''><img src='images/github.svg' /></a>
         </div>
+        <div id='foot'>
+          <div><a href=''><img src='images/zuri.svg' /></a></div>
+          <p>HNG internship 9 frontend task</p>
+          <div><a href=''><img src='images/i4g.png' /></a></div>
+        </div>
       </section>
     </div>
   )
