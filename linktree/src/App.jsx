@@ -18,7 +18,8 @@ function App() {
         <a href='https://training.zuri.team/' className='link' id='btn__zuri'>Zuri Team</a><br/>
         <a href='https://books.zuri.team' className='link' id='books'>Zuri Books</a><br/>
         <a href='https://books.zuri.team/python-for-beginners?ref_id=<Banke>' className='link' id='book__python'>Python Books</a><br/>
-        <a href='https://background.zuri.team' className='link' id='pitch'>Background check for coders</a>
+        <a href='https://background.zuri.team' className='link' id='pitch'>Background check for coders</a><br/>
+        <a href='https://books.zuri.team/design-rules' className='link' id='book__design'>Design Books</a>
       </section>
       <section>
         <div id='media'>
