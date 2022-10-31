@@ -1,10 +1,11 @@
-header{
+#profile{
     top: 0px;
     margin: auto;
+    margin-top: 50px;
     width: fit-content;
     text-align: center;
 }
-header div{
+#profile div{
     width: 80px;
     height: 80px;
     border-radius: 50px;
@@ -19,7 +20,29 @@ img{
 h1{
     font-size: large;
 }
-main{
+#usr-names{
+    display: none;
+}
+#links{
+    margin: auto;
     margin-top: 40px;
-    width: 100vw;
+    width: 99.5vw;
+    /* margin-left: -5px; */
+}
+
+/*  */
+.link{
+    display: block;
+    padding: 15px;
+    width: 80%;
+    text-align: center;
+    text-decoration: none;
+    background-color: #EAECF0;
+    font-size: large;
+    font-weight: bold;
+    color: rgb(85, 85, 85);
+    border-radius: 5px;
+    margin: auto;
+}
+@media screen and (max-width: 525px) {
 }
