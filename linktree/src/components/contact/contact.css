@@ -1,15 +1,25 @@
 .Contact{
     width: 600px;
     margin: auto;
+    margin-top: 50px;
 }
 .row, input, textarea{
     width: 100%;
 }
+input, textarea{
+    padding: 10px;
+    border: 1px solid rgb(158, 158, 158);
+    border-radius: 5px;
+    margin-top: 5px;
+}
 .row{
     margin-bottom: 20px;
 }
-label{
-    margin-bottom: 5px;
+#head{
+    margin-bottom: 40px;
+}
+h1{
+    font-size: 30px !important;
 }
 .feild{
     width: 47%;
@@ -18,4 +28,36 @@ label{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+button{
+    width: 104%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #1570EF;
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+#check input{
+    width: fit-content;
+}
+@media screen and (max-width: 700px) {
+    .Contact{
+        width: 80vw;
+    }
+}
+@media screen and (max-width: 525px) {
+    .feild{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #names{
+        margin-bottom: 0px;
+    }
+    button{
+        width: 110%;
+    }
 }

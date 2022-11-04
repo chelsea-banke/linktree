@@ -12,6 +12,7 @@
 @media screen and (max-width: 700px) {
     #foot{
         display: block;
+        width: 90vw;
     }
     #foot img{
         width: 100px;
