@@ -1,0 +1,21 @@
+.Contact{
+    width: 600px;
+    margin: auto;
+}
+.row, input, textarea{
+    width: 100%;
+}
+.row{
+    margin-bottom: 20px;
+}
+label{
+    margin-bottom: 5px;
+}
+.feild{
+    width: 47%;
+}
+#names{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
