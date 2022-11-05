@@ -2,6 +2,7 @@ import { useState } from "react";
 import './contact.css'
 
 function Contact(){
+
     return(
         <form className="Contact">
             <div id="head">
@@ -11,11 +12,13 @@ function Contact(){
             <div className="row" id="names">
                 <div className="feild">
                     <label for="first_name">First name</label>
-                    <input id="first_name" type='text' placeholder="Enter your first name" required/>
+                    <input id="first_name" type='text' placeholder="Enter your first name" required />
+                    <p className="p">Please fill out this feild</p>
                 </div>
                 <div className="feild">
                     <label for="last_name">Last name</label>
                     <input id="last_name" type='text' placeholder="Enter your last name" required/>
+                    <p className="p">Please fill out this feild</p>
                 </div>
             </div>
             <div className="row">
@@ -32,7 +35,10 @@ function Contact(){
                 <input id="check" type='checkbox'/>
                 <label for='check'>You agree to providing your data so we may contact you</label>
             </div>
-            <button type='submit' id="btn_submit">Send message</button>
+            <button type='submit' id="btn_submit" onClick={() => {
+                document.querySelectorAll('input').forEach(elm => {elm.classList.add('error')})
+                document.querySelectorAll('textarea').forEach(elm => {elm.classList.add('error')})
+            }}>Send message</button>
         </form>
     )
 }

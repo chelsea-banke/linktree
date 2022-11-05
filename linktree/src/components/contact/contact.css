@@ -50,19 +50,17 @@ button{
     display: none;
     font-size: small;
 }
-#email:focus  ~ .p, #message:focus ~ .p{
-    display: block;
-}
-#message ~ .p{
-    color: red;
-}
 input:focus, textarea:focus {
     border: 1px solid #7bb2ff !important;
     outline-color: #7bb2ff;
 }
-textarea:focus {
+.error:invalid:required {
     border: 1px solid rgb(255, 54, 54) !important;
     outline: 4px solid rgb(255, 212, 212) !important;
+}
+.error:focus ~ .p{
+    color: red;
+    display: block;
 }
 @media screen and (max-width: 700px) {
     .Contact{
