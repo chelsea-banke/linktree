@@ -76,6 +76,9 @@ button[disabled]{
 button{
     background-color: #1570EF;
 }
+button:focus{
+    outline: 4px solid rgb(206, 226, 255);
+}
 @media screen and (max-width: 700px) {
     .Contact{
         width: 80vw;
