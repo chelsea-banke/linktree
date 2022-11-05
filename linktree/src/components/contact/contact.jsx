@@ -21,10 +21,12 @@ function Contact(){
             <div className="row">
                 <label for="email">Email</label>
                 <input id="email" type='email' placeholder="yourname@gmail.com" required/>
+                <p className="p">make sure your email ends with @gmail.com</p>
             </div>
             <div className="row">
                 <label for="message">Message</label><br/>
                 <textarea id="message" type='text' placeholder="Send me a message and I'll reply you as soon as possible" rows='7' required></textarea>
+                <p className="p">Please enter a message</p>
             </div>
             <div className="row" id="check">
                 <input id="check" type='checkbox'/>

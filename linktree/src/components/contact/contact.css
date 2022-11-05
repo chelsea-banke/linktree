@@ -44,6 +44,15 @@ button{
 #check input{
     width: fit-content;
 }
+.p{
+    margin-top: 5px;
+    color: rgb(94, 94, 94);
+    display: none;
+    font-size: small;
+}
+#email:focus  ~ .p, #message:focus ~ .p{
+    display: block;
+}
 @media screen and (max-width: 700px) {
     .Contact{
         width: 80vw;
