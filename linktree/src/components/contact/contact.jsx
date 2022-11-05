@@ -2,7 +2,7 @@ import { useState } from "react";
 import './contact.css'
 
 function Contact(){
-
+    let checked = false
     return(
         <form className="Contact">
             <div id="head">
@@ -32,13 +32,24 @@ function Contact(){
                 <p className="p">Please enter a message</p>
             </div>
             <div className="row" id="check">
-                <input id="check" type='checkbox'/>
+                <input id="check" type='checkbox' onClick={() => {
+                    if (!checked){
+                        let submitBtn = document.getElementById('btn_submit')
+                        submitBtn.disabled = false;
+                        submitBtn.onclick = () =>{
+                            document.querySelectorAll('input').forEach(elm => {elm.classList.add('error')})
+                            document.querySelectorAll('textarea').forEach(elm => {elm.classList.add('error')})
+                        }
+                        checked = true
+                    }
+                    else{
+                        document.getElementById('btn_submit').disabled = true;
+                        checked = false
+                    }
+                }}/>
                 <label for='check'>You agree to providing your data so we may contact you</label>
             </div>
-            <button type='submit' id="btn_submit" onClick={() => {
-                document.querySelectorAll('input').forEach(elm => {elm.classList.add('error')})
-                document.querySelectorAll('textarea').forEach(elm => {elm.classList.add('error')})
-            }}>Send message</button>
+            <button type='submit' id="btn_submit" disabled='true'>Send message</button>
         </form>
     )
 }

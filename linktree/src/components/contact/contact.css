@@ -35,7 +35,6 @@ button{
     padding: 10px;
     border-radius: 5px;
     border: none;
-    background-color: #1570EF;
     margin: auto;
     text-align: center;
     color: white;
@@ -61,6 +60,12 @@ input:focus, textarea:focus {
 .error:focus ~ .p{
     color: red;
     display: block;
+}
+button[disabled]{
+    background-color: #9dc6ff !important;
+}
+button{
+    background-color: #1570EF;
 }
 @media screen and (max-width: 700px) {
     .Contact{
