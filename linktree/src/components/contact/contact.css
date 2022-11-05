@@ -49,17 +49,26 @@ button{
     display: none;
     font-size: small;
 }
-input:focus, textarea:focus {
+input:focus, textarea:focus, .error:valid {
     border: 1px solid #7bb2ff !important;
-    outline-color: #7bb2ff;
+    outline-color: #7bb2ff !important;
 }
 .error:invalid:required {
     border: 1px solid rgb(255, 54, 54) !important;
-    outline: 4px solid rgb(255, 212, 212) !important;
+}
+.error:focus{
+    outline: 4px solid rgb(255, 212, 212) !important
+}
+.error:valid {
+    border: 1px solid #7bb2ff !important;
+    outline-color: #d2e5ff !important;
 }
 .error:focus ~ .p{
     color: red;
     display: block;
+}
+.error:valid ~ .p{
+    display: none;
 }
 button[disabled]{
     background-color: #9dc6ff !important;
