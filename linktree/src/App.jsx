@@ -13,14 +13,9 @@ function App() {
         <Route exact path='/' element={<Home/>}></Route>
         <Route exact path='/contact' element={<Contact/>}></Route>
       </Routes>
-      <section>
-        <div id='media'>
-        <div>
-          <a href=''><img src='images/slack.png' /></a>
-          <a href=''><img src='images/github.svg' /></a>
-        </div>
-        </div>
+      <br/>
       <hr/>
+      <section>
         <div id='foot'>
           <div><a href=''><img src='images/zuri.svg' /></a></div>
           <p>HNG internship 9 frontend task</p>

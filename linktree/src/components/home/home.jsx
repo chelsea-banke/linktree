@@ -21,6 +21,12 @@ function Home(){
                 <a href='https://books.zuri.team/design-rules' className='link' id='book__design'>Design Books</a><br/>
                 <a className='link' id='contact' href='/contact'>Contact</a>
             </section>
+            <div id='media'>
+                <div>
+                    <a href=''><img src='images/slack.png' /></a>
+                    <a href=''><img src='images/github.svg' /></a>
+                </div>
+            </div>
         </div>
     )
 }

@@ -28,7 +28,19 @@ h1{
     margin-top: 40px;
     width: 99vw;
 }
-
+#media{
+    margin: auto;
+    width: fit-content;
+    margin-top: 40px;
+}
+#media div{
+    margin: auto;
+    margin-left: -10px;
+}
+#media a img{
+    width: 20px;
+    margin-left: 15px;
+}
 /*  */
 .link{
     display: block;
