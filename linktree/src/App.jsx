@@ -15,9 +15,12 @@ function App() {
       </Routes>
       <section>
         <div id='media'>
-        <a href=''><img src='images/slack.png' /></a>
-        <a href=''><img src='images/github.svg' /></a>
+        <div>
+          <a href=''><img src='images/slack.png' /></a>
+          <a href=''><img src='images/github.svg' /></a>
         </div>
+        </div>
+      <hr/>
         <div id='foot'>
           <div><a href=''><img src='images/zuri.svg' /></a></div>
           <p>HNG internship 9 frontend task</p>

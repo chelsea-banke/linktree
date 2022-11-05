@@ -43,13 +43,4 @@ h1{
     border-radius: 5px;
     margin: auto;
 }
-#media{
-    margin: auto;
-    width: fit-content;
-    margin-top: 40px;
-}
-#media a img{
-    width: 20px;
-    /* margin: px; */
-    margin-left: 15px;
-}
+
