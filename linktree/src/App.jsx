@@ -38,7 +38,7 @@ function App() {
 
   return (
     <div className={`App ${theme}`}>
-      <div className='dark:bg-gray-800 h-screen overflow-hidden relative'>
+      <div className='dark:bg-gray-800 underlay overflow-hidden'>
         <Head theme={theme} />
         <div className='text-stone-600 m-auto px-8 rounded-lg py-4 w-3/4 mt-2 max-[700px]:w-full'>
           {links.map(link=>{
