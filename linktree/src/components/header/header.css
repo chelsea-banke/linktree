@@ -1,0 +1,43 @@
+.profile{
+    width: 200px;
+    top: 0px;
+}
+.profile-container{
+    width: 200px;
+    height: 200px;
+}
+.r-out {
+    animation: r-out 1s;
+    right: 100%;
+}
+.r-in {
+    animation: r-in 1s;
+    left: 0px;
+}
+.l-out {
+    animation: l-out 1s;
+    right: 100%;
+}
+.l-in {
+    animation: l-in 1s;
+    left: 0px;
+}
+.resume button{
+    width: 175px;
+}
+@keyframes l-out {
+    0%{left: 0px;}
+    100%{left: -100%;}
+}
+@keyframes l-in {
+    0%{left: -100%;}
+    100%{left: 0px;}
+}
+@keyframes r-out {
+    0%{right: 0px;}
+    100%{right: -100%;}
+}
+@keyframes r-in {
+    0%{left: 100%;}
+    100%{left: 0px;}
+}
