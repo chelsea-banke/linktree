@@ -34,7 +34,7 @@ function Head(){
     }
 
     return(
-        <header className="w-screen mt-5 max-[700px]:mt-10">
+        <header className="w-screen mt-5">
             <div className="flex justify-center w-fit m-auto">
                 <button onClick={()=>{switchProfile(-1)}}>
                     <FontAwesomeIcon icon="fa-solid fa-chevron-left" />
@@ -51,8 +51,8 @@ function Head(){
                 <button className={`p-1 mr-1 border rounded-full border-black ${viewState==1 ? 'bg-black' : 'bg-white'}`}></button>
                 <button className={`p-1 mr-l border rounded-full border-black ${viewState==2 ? "bg-black" : "bg-white"}`}></button>
             </div>
-            <h1 className="text-center text-3xl font-medium">Chelsea Banke</h1>
-            <div className="m-auto w-fit text-white mt-2 font-medium resume">
+            <h1 className="text-center text-3xl font-medium max-[700px]:text-2xl">Chelsea Banke</h1>
+            <div className="m-auto w-fit text-white mt-2 font-medium resume max-[700px]:text-sm">
                 <button className="bg-green-600 py-1 px-4 mr-1 rounded-l-full rounded-r-lg">Preview Resume</button>
                 <button className="bg-blue-600 py-1 px-4 rounded-r-full">Download Resume</button>
             </div>

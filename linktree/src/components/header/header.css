@@ -41,3 +41,16 @@
     0%{left: 100%;}
     100%{left: 0px;}
 }
+@media screen and (max-width: 700px) {
+    .profile{
+        width: 150px;
+        top: 0px;
+    }
+    .profile-container{
+        width: 150px;
+        height: 150px;
+    }
+    .resume button{
+        width: fit-content;
+    }
+}
