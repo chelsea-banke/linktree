@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function Foot(){
     return(
-        <footer className="w-full py-5 rounded-t-lg h-32 bg-blue-600 absolute bottom-0">
+        <footer className="w-full py-5 rounded-t-lg h-32 bg-blue-600 absolute bottom-0 max-[700px]:h-28">
             <div className='flex m-auto w-fit'>
                 <button className='mx-2'>
                     <FontAwesomeIcon size='2xl' icon="fa-solid fa-envelope" style={{color: "#ffffff",}} />
@@ -14,7 +14,7 @@ function Foot(){
                     Buy me a coffee<FontAwesomeIcon icon="fa-solid fa-mug-hot" size="xl" style={{color: "#005eff",}} className='ml-1'/>
                 </button>
             </div>
-            <p className='text-white text-center mt-5'>made with <FontAwesomeIcon icon="fa-regular fa-heart" size="lg" style={{color: "#ffffff",}} /> by I</p>
+            <p className='text-white text-center mt-5 max-[700px]:mt-2'>made with <FontAwesomeIcon icon="fa-regular fa-heart" size="lg" style={{color: "#ffffff",}} /> by I</p>
         </footer>
     )
 }

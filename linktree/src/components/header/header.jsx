@@ -36,15 +36,15 @@ function Head(){
     return(
         <header className="w-screen mt-5">
             <div className="flex justify-center w-fit m-auto">
-                <button onClick={()=>{switchProfile(-1)}}>
-                    <FontAwesomeIcon icon="fa-solid fa-chevron-left" />
+                <button className='hover:cursor-default'>
+                    <FontAwesomeIcon icon="fa-solid fa-chevron-left" className='p-6 pr-0 hover:cursor-pointer' onClick={()=>{switchProfile(-1)}} />
                 </button>
                 <div className="m-auto profile-container relative overflow-x-hidden rounded-full">
                     <img className={`profile absolute profile-1 r-in`} id="profile1" src={profile1} alt="" />
                     <img className={`profile w-screen absolute profile-2 r-out`} id="profile2" src={profile2} alt="" />
                 </div>
-                <button onClick={()=>{switchProfile(1)}}>
-                    <FontAwesomeIcon icon="fa-solid fa-chevron-right" />
+                <button className='hover:cursor-default'>
+                    <FontAwesomeIcon icon="fa-solid fa-chevron-right" className='p-6 pl-0 hover:cursor-pointer' onClick={()=>{switchProfile(1)}}/>
                 </button>
             </div>
             <div className='w-fit m-auto'>
