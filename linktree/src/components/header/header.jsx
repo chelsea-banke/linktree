@@ -4,12 +4,12 @@ import profile2 from "../../assets/profiles/profile2.jpg"
 import "./header.css"
 import { useState } from 'react'
 
-function Head(){
+function Head({theme}){
     const [viewState, setViewState] = useState(1)
     let view = 1
 
     const switchProfile = (offset)=>{
-        console.log(view)
+        view = viewState
         const prevView = view
         if (view==1 && offset==-1){
             view=2
@@ -37,21 +37,21 @@ function Head(){
         <header className="w-screen mt-5">
             <div className="flex justify-center w-fit m-auto">
                 <button className='hover:cursor-default'>
-                    <FontAwesomeIcon icon="fa-solid fa-chevron-left" className='p-6 pr-0 hover:cursor-pointer' onClick={()=>{switchProfile(-1)}} />
+                    <FontAwesomeIcon icon="fa-solid fa-chevron-left" className='p-6 pr-0 hover:cursor-pointer' onClick={()=>{switchProfile(-1)}}  color={`${theme=="dark" ? "white" : ""}`} />
                 </button>
                 <div className="m-auto profile-container relative overflow-x-hidden rounded-full">
                     <img className={`profile absolute profile-1 r-in`} id="profile1" src={profile1} alt="" />
                     <img className={`profile w-screen absolute profile-2 r-out`} id="profile2" src={profile2} alt="" />
                 </div>
                 <button className='hover:cursor-default'>
-                    <FontAwesomeIcon icon="fa-solid fa-chevron-right" className='p-6 pl-0 hover:cursor-pointer' onClick={()=>{switchProfile(1)}}/>
+                    <FontAwesomeIcon icon="fa-solid fa-chevron-right" className='p-6 pl-0 hover:cursor-pointer' onClick={()=>{switchProfile(1)}} color={`${theme=="dark" ? "white" : ""}`}/>
                 </button>
             </div>
             <div className='w-fit m-auto'>
-                <button className={`p-1 mr-1 border rounded-full border-black ${viewState==1 ? 'bg-black' : 'bg-white'}`}></button>
-                <button className={`p-1 mr-l border rounded-full border-black ${viewState==2 ? "bg-black" : "bg-white"}`}></button>
+                <button className={`p-1 mr-1 border rounded-full border-black ${viewState==1 ? 'bg-black' : 'bg-white'} dark:border-white`}></button>
+                <button className={`p-1 mr-l border rounded-full border-black ${viewState==2 ? "bg-black" : "bg-white"} dark:border-white`}></button>
             </div>
-            <h1 className="text-center text-3xl font-medium max-[700px]:text-2xl">Chelsea Banke</h1>
+            <h1 className="text-center text-3xl font-medium max-[700px]:text-2xl dark:text-white">Chelsea Banke</h1>
             <div className="m-auto w-fit text-white mt-2 font-medium resume max-[700px]:text-sm">
                 <button className="bg-green-600 py-1 px-4 mr-1 rounded-l-full rounded-r-lg">Preview Resume</button>
                 <button className="bg-blue-600 py-1 px-4 rounded-r-full">Download Resume</button>
