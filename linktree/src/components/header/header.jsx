@@ -34,7 +34,7 @@ function Head({theme}){
     }
 
     return(
-        <header className="w-screen pt-5">
+        <header className="w-screen pt-5 relative">
             <div className="flex justify-center w-fit m-auto">
                 <button className='hover:cursor-default'>
                     <FontAwesomeIcon icon="fa-solid fa-chevron-left" className='p-6 pr-0 hover:cursor-pointer' onClick={()=>{switchProfile(-1)}}  color={`${theme=="dark" ? "white" : ""}`} />
