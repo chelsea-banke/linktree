@@ -1,8 +1,10 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import profile1 from "../../assets/profiles/profile1.jpg"
 import profile2 from "../../assets/profiles/profile2.jpg"
+import resume from "../../assets/docs/resume.pdf"
 import "./header.css"
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 function Head({theme}){
     const [viewState, setViewState] = useState(1)
@@ -53,8 +55,12 @@ function Head({theme}){
             </div>
             <h1 className="text-center text-3xl font-medium max-[700px]:text-2xl dark:text-white">Chelsea Banke</h1>
             <div className="m-auto w-fit text-white mt-2 font-medium resume max-[700px]:text-sm">
-                <button className="bg-green-600 py-1 px-4 mr-1 rounded-l-full rounded-r-lg">Preview Resume</button>
-                <button className="bg-blue-600 py-1 px-4 rounded-r-full">Download Resume</button>
+                <Link to={"/resume"}>
+                    <button className="bg-green-600 py-1 px-4 mr-1 rounded-l-full rounded-r-lg">Preview Resume</button>
+                </Link>
+                <a href={resume} download="chelsea-banke">
+                    <button className="bg-blue-600 py-1 px-4 rounded-r-full">Download Resume</button>
+                </a>
             </div>
         </header>
     )

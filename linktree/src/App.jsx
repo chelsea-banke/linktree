@@ -1,6 +1,8 @@
 import './App.css'
+import { Routes, Route, Navigate } from 'react-router-dom'
 import Link from './components/link/link'
 import Head from './components/header/header'
+import resume from './assets/docs/resume.pdf'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 
@@ -36,10 +38,11 @@ function App() {
 
   const techs = ["python", "square-js", "react", "angular", "node"]
 
-  return (
-    <div className={`App ${theme}`}>
-      <div className='dark:bg-gray-800 underlay overflow-hidden relative'>
-      <img src={`images/${theme=="dark" ? "green" : "black"}-binary-rain.png`} className='tree absolute' alt="" />
+  const Home = ()=>{
+    return(
+      <div className={`App ${theme}`}>
+      <div className='bg-stone-200 dark:bg-gray-800 underlay overflow-hidden relative'>
+        <img src={`images/${theme=="dark" ? "green" : "black"}-binary-rain.png`} className='tree absolute' alt="" />
         <Head theme={theme} />
         <div className='text-stone-600 m-auto px-8 rounded-lg py-4 w-3/4 mt-2 max-[700px]:w-full relative'>
           {links.map(link=>{
@@ -55,14 +58,30 @@ function App() {
             )
           })}
         </div>
-        <Foot/>
-        <div className='fixed bg-black p-1 rounded-b-lg top-0 right-2 dark:bg-white'>
-          <button className='p-3 bg-white mt-1 rounded-lg block  max-[700px]:p-2 dark:bg-gray-700' onClick={()=>{theme=="dark" ? setTheme("light") : setTheme("dark")}}>
-            <FontAwesomeIcon icon="fa-solid fa-circle-half-stroke"  color={`${theme=="dark" ? "white" : ""}`}/>
+        <div className='fixed bg-white p-1 rounded-b-lg top-0 right-2 dark:bg-black'>
+          <button className='p-3 bg-gray-700 mt-1 rounded-lg block  max-[700px]:p-2 dark:bg-white' onClick={()=>{theme=="dark" ? setTheme("light") : setTheme("dark")}}>
+            <FontAwesomeIcon icon="fa-solid fa-circle-half-stroke"  color={`${theme=="dark" ? "" : "white"}`}/>
           </button>
         </div>
       </div>
+      <Foot/>
     </div>
+    )
+  }
+
+  const Resume = ()=>{
+    return(
+      <div className='w-screen h-fit'>
+        <iframe className='z-10 h-screen' src={resume} width="100%" height="500px"></iframe>
+      </div>
+    )
+  }
+
+  return (
+    <Routes>
+        <Route exact path="/" element={Home()} />
+        <Route path='/resume' element={Resume()} />
+    </Routes>
   )
 
 }

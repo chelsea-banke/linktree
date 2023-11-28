@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
+import './foot.css'
 function Foot(){
     return(
         <footer className="w-full py-5 rounded-t-lg h-32 bg-blue-600 absolute bottom-0 max-[700px]:h-28">
@@ -15,6 +15,7 @@ function Foot(){
                 </button>
             </div>
             <p className='text-white text-center mt-5 max-[700px]:mt-2'>made with <FontAwesomeIcon icon="fa-regular fa-heart" size="lg" style={{color: "#ffffff",}} /> by I</p>
+            {/* <div className='overlay fixed bg-blue-600 top-0 h-screen rounded-t-lg'></div> */}
         </footer>
     )
 }
