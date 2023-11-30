@@ -58,7 +58,7 @@ function App() {
             )
           })}
         </div>
-        <div className='fixed bg-white p-1 rounded-b-lg top-0 right-2 dark:bg-black'>
+        <div className='fixed bg-white p-1 rounded-b-lg top-0 right-2 dark:bg-black z-40'>
           <button className='p-3 bg-gray-700 mt-1 rounded-lg block  max-[700px]:p-2 dark:bg-white' onClick={()=>{theme=="dark" ? setTheme("light") : setTheme("dark")}}>
             <FontAwesomeIcon icon="fa-solid fa-circle-half-stroke"  color={`${theme=="dark" ? "" : "white"}`}/>
           </button>

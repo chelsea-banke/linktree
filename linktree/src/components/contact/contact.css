@@ -1,0 +1,48 @@
+.contact{
+    width: 100%;
+    max-width: 660px;
+    left: 50%;
+    margin-left: -330px;
+    /* top: 0; */
+    height: fit-content;
+    z-index: 0;
+    z-index: 20;
+}
+.contact-overlay{
+    opacity: 0.2;
+    z-index: 10;
+}
+.contact-in{
+    top: 0px;
+    animation: contact-in 0.5s;
+}
+.contact-out{
+    top: -100vh;
+    animation: contact-out 0.5s;
+}
+@keyframes contact-in {
+    0%{
+        top: -100vh;
+        opacity: 0;
+    }
+    100%{
+        top: 0px;
+        opacity: 1;
+    }
+}
+@keyframes contact-out {
+    0%{
+        top: 0px;
+        opacity: 1;
+    }
+    100%{
+        top: -100vh;
+        opacity: 0;
+    }
+}
+@media screen and (max-width: 660px) {
+    .contact{
+        left: 0px;
+        margin-left: auto;
+    }
+}
