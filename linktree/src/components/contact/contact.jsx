@@ -13,7 +13,7 @@ function Contact({displayContactProp}){
             <div className={`contact-overlay fixed w-screen h-screen top-0 left-0 bg-black dark:bg-white ${displayContact ? "block opacity-1" : "hidden opacity-0"}`} onClick={()=>{setDisplayContact(false)}}></div>
             <div className={`contact pb-5 fixed border-2 border-t-0 border-blue-600 bg-white dark:bg-stone-800 rounded-b-lg ${displayContact ? 'contact-in' : 'contact-out'}`}>
                 <div className='m-auto mt-10 w-11/12 text-gray-800 dark:text-white'>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor iusto ad explicabo cupiditate ducimus molestias aliquam nihil voluptates optio magnam illo non temporibus, enim minima repellendus recusandae expedita distinctio impedit!</p>
+                    <h2 className="text-3xl font-medium">Leave a message</h2>
                 <form action="" className='mt-10'>
                     <div className=''>
                         <label htmlFor="" className='block'>Your name</label>
