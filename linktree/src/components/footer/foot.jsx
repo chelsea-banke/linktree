@@ -10,7 +10,7 @@ function Foot(){
             <Contact displayContactProp={displayContact}/>
             <footer className="w-full py-5 rounded-t-lg h-32 bg-blue-600 absolute bottom-0 max-[700px]:h-28">
                 <div className='flex m-auto w-fit'>
-                    <button className='mx-2'>
+                    <button className='mx-2' onClick={()=>{window.location.href = 'mailto:bankechelsea@gmail.com'}}>
                         <FontAwesomeIcon size='2xl' icon="fa-solid fa-envelope" style={{color: "#ffffff",}} />
                     </button>
                     <button className='mx-2' onClick={()=>{setDisplayContact(!displayContact)}}>
